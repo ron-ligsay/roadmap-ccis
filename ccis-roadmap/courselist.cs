@@ -12,17 +12,19 @@ namespace ccis_roadmap
 {
     public partial class courselist : Form
     {
+        Person _person = new Person()
+        {
+            FName = "Jamie",
+            Email = "Jamie@1234.net",
+            Address = "Wall Street",
+            Number = 123124332,
+        };
+
         public courselist()
         {
             InitializeComponent();
 
-            Person _person = new Person()
-            {
-                FName = "Jamie",
-                Email = "Jamie@1234.net",
-                Address = "Wall Street",
-                Number = 123124332,
-            };
+            
 
             //this.DataContext = _person;
             this.FName.Text = _person.FName;
@@ -34,7 +36,12 @@ namespace ccis_roadmap
 
         private void courselist_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void Button_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"{this._person.FName}");
         }
     }
 
