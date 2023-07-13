@@ -1,6 +1,6 @@
 ﻿namespace ccis_roadmap
 {
-    partial class Form1
+    partial class Specialization
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // Specialization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(785, 470);
-            this.Name = "Form1";
-            this.Text = "Homepage";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ClientSize = new System.Drawing.Size(906, 571);
+            this.Name = "Specialization";
+            this.Text = "Specialization";
             this.ResumeLayout(false);
 
         }
@@ -45,4 +44,3 @@
         #endregion
     }
 }
-
