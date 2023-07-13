@@ -27,10 +27,10 @@ namespace ccis_roadmap
             
 
             //this.DataContext = _person;
-            this.FName.Text = _person.FName;
-            this.Email.Text = _person.Email;
-            this.Address.Text = _person.Address;
-            this.Number.Text = _person.Number.ToString();
+            this.nameTextbox.Text = _person.FName;
+            this.emailTextbox.Text = _person.Email;
+            this.addressTextbox.Text = _person.Address;
+            this.numberTextbox.Text = _person.Number.ToString();
 
         }
 
@@ -41,6 +41,7 @@ namespace ccis_roadmap
 
         private void Button_Click(object sender, EventArgs e)
         {
+            // TODO: fix messagebox 
             MessageBox.Show($"{this._person.FName}");
         }
     }

@@ -33,6 +33,10 @@
             this.Address = new System.Windows.Forms.Label();
             this.Number = new System.Windows.Forms.Label();
             this.showButton = new System.Windows.Forms.Button();
+            this.nameTextbox = new System.Windows.Forms.TextBox();
+            this.addressTextbox = new System.Windows.Forms.TextBox();
+            this.emailTextbox = new System.Windows.Forms.TextBox();
+            this.numberTextbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // FName
@@ -84,11 +88,51 @@
             this.showButton.Text = "Show";
             this.showButton.UseVisualStyleBackColor = true;
             // 
+            // nameTextbox
+            // 
+            this.nameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameTextbox.Location = new System.Drawing.Point(532, 115);
+            this.nameTextbox.Name = "nameTextbox";
+            this.nameTextbox.Size = new System.Drawing.Size(356, 44);
+            this.nameTextbox.TabIndex = 4;
+            this.nameTextbox.Text = "TName";
+            // 
+            // addressTextbox
+            // 
+            this.addressTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressTextbox.Location = new System.Drawing.Point(532, 169);
+            this.addressTextbox.Name = "addressTextbox";
+            this.addressTextbox.Size = new System.Drawing.Size(356, 44);
+            this.addressTextbox.TabIndex = 5;
+            this.addressTextbox.Text = "TAddress";
+            // 
+            // emailTextbox
+            // 
+            this.emailTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTextbox.Location = new System.Drawing.Point(532, 220);
+            this.emailTextbox.Name = "emailTextbox";
+            this.emailTextbox.Size = new System.Drawing.Size(356, 44);
+            this.emailTextbox.TabIndex = 6;
+            this.emailTextbox.Text = "TEmail";
+            // 
+            // numberTextbox
+            // 
+            this.numberTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberTextbox.Location = new System.Drawing.Point(532, 275);
+            this.numberTextbox.Name = "numberTextbox";
+            this.numberTextbox.Size = new System.Drawing.Size(356, 44);
+            this.numberTextbox.TabIndex = 7;
+            this.numberTextbox.Text = "TNumber";
+            // 
             // courselist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1038, 482);
+            this.Controls.Add(this.numberTextbox);
+            this.Controls.Add(this.emailTextbox);
+            this.Controls.Add(this.addressTextbox);
+            this.Controls.Add(this.nameTextbox);
             this.Controls.Add(this.showButton);
             this.Controls.Add(this.Number);
             this.Controls.Add(this.Address);
@@ -109,5 +153,9 @@
         private System.Windows.Forms.Label Address;
         private System.Windows.Forms.Label Number;
         private System.Windows.Forms.Button showButton;
+        private System.Windows.Forms.TextBox nameTextbox;
+        private System.Windows.Forms.TextBox addressTextbox;
+        private System.Windows.Forms.TextBox emailTextbox;
+        private System.Windows.Forms.TextBox numberTextbox;
     }
 }
