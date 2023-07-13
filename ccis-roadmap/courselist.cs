@@ -18,13 +18,18 @@ namespace ccis_roadmap
 
             Person _person = new Person()
             {
-                Name = "Jamie",
+                FName = "Jamie",
                 Email = "Jamie@1234.net",
                 Address = "Wall Street",
                 Number = 123124332,
             };
 
-            this.DataContext = _person;
+            //this.DataContext = _person;
+            this.FName.Text = _person.FName;
+            this.Email.Text = _person.Email;
+            this.Address.Text = _person.Address;
+            this.Number.Text = _person.Number.ToString();
+
         }
 
         private void courselist_Load(object sender, EventArgs e)
@@ -40,7 +45,7 @@ namespace ccis_roadmap
 
         }
 
-        public string Name { get; set; }
+        public string FName { get; set; }
         public string Email { get; set; }
         public string Address { get; set; }
         public int Number { get; set; }
